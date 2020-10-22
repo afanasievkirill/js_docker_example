@@ -1,6 +1,7 @@
+const db = process.env.MONGO_URL
+
 module.exports = {
     secret: 'budgetsecret',
     session: { session: false },
-    database: process.env.MONGO_URL,
-    port: process.env.PORT
+    database: db
 }
